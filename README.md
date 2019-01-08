@@ -1,6 +1,6 @@
-Forked to update dependencies versions.
+Forked to update dependency versions.
 
-# zipkin-instrumentation-axios
+# @alex2005git/zipkin-instrumentation-axios
 
 Library to instrument the axios HTTP-client.
 
@@ -9,7 +9,7 @@ You need to inject you axios instance into **wrapAxios(axios, options)**.
 ## Installation
 
 ```bash
-npm install --save zipkin-instrumentation-axios
+npm i @alex2005git/zipkin-instrumentation-axios
 ```
 
 ## Usage
@@ -41,4 +41,11 @@ zipkinAxios.get('http://another-service/foo')
 zipkinAxios.post('http://another-service/bar', { bar: 42 })
 .then(result => res.send(result.data))
 .catch(e => console.log(e));
+```
+
+## Publishing
+
+```bash
+npm adduser --scope=@alex2005git
+npm publish --access=public
 ```
